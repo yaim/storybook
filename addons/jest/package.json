@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-jest",
-  "version": "6.3.0-beta.17",
+  "version": "6.4.0-alpha.6",
   "description": "React storybook addon that show component jest report",
   "keywords": [
     "addon",
@@ -76,7 +76,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "71599e3d3ba5a90cd258a15e293de5662434a326",
+  "gitHead": "e15d4e0276d925a601ee25fd819d5f050920e1ab",
   "sbmodern": "dist/modern/index.js",
   "storybook": {
     "displayName": "Jest",

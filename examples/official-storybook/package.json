@@ -1,6 +1,6 @@
 {
   "name": "official-storybook",
-  "version": "6.3.0-beta.17",
+  "version": "6.4.0-alpha.6",
   "private": true,
   "scripts": {
     "build-storybook": "cross-env STORYBOOK_DISPLAY_WARNING=true DISPLAY_WARNING=true build-storybook -c ./",
@@ -35,6 +35,8 @@
     "@storybook/react": "workspace:*",
     "@storybook/source-loader": "workspace:*",
     "@storybook/theming": "workspace:*",
+    "@testing-library/dom": "^7.31.2",
+    "@testing-library/user-event": "^13.1.9",
     "chromatic": "^5.6.0",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",

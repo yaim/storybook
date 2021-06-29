@@ -1,1 +1,1 @@
-{"version":"6.3.0-beta.17","info":{"plain":"### Bug Fixes\n\n- Measure: Update version to fix hooks issue ([#15167](https://github.com/storybookjs/storybook/pull/15167))"}}
+{"version":"6.4.0-alpha.6","info":{"plain":"### Bug Fixes\n\n- Core: Fix decorator context update ([#15408](https://github.com/storybookjs/storybook/pull/15408))\n- Revert \"Vue3: Update args without re-mounting component\" ([#15409](https://github.com/storybookjs/storybook/pull/15409))"}}
