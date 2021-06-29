@@ -49,6 +49,7 @@
     "@storybook/api": "workspace:*",
     "@storybook/client-api": "workspace:*",
     "@storybook/components": "workspace:*",
+    "@storybook/theming": "workspace:*",
     "core-js": "^3.8.2",
     "regenerator-runtime": "^0.13.7"
   },

@@ -5670,6 +5670,7 @@ __metadata:
     "@storybook/core": "workspace:*"
     "@storybook/core-events": "workspace:*"
     "@storybook/csf": 0.0.1
+    "@storybook/csf-tools": "workspace:*"
     "@storybook/node-logger": "workspace:*"
     "@storybook/postinstall": "workspace:*"
     "@storybook/react": "workspace:*"
@@ -6049,6 +6050,7 @@ __metadata:
     "@storybook/api": "workspace:*"
     "@storybook/client-api": "workspace:*"
     "@storybook/components": "workspace:*"
+    "@storybook/theming": "workspace:*"
     core-js: ^3.8.2
     regenerator-runtime: ^0.13.7
   peerDependencies:

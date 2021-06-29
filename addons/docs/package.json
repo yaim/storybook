@@ -72,6 +72,7 @@
     "@storybook/core": "workspace:*",
     "@storybook/core-events": "workspace:*",
     "@storybook/csf": "0.0.1",
+    "@storybook/csf-tools": "workspace:*",
     "@storybook/node-logger": "workspace:*",
     "@storybook/postinstall": "workspace:*",
     "@storybook/source-loader": "workspace:*",
