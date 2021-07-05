@@ -4258,7 +4258,7 @@ __metadata:
     "@babel/preset-react": ^7.12.10
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.3
     "@storybook/addons": "workspace:*"
-    "@storybook/client-api": 6.4.0-alpha.11
+    "@storybook/client-api": "workspace:*"
     "@storybook/core": "workspace:*"
     "@storybook/core-common": "workspace:*"
     "@storybook/node-logger": "workspace:*"

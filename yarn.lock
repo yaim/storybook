@@ -6531,7 +6531,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/client-api@6.4.0-alpha.11, @storybook/client-api@workspace:*, @storybook/client-api@workspace:lib/client-api":
+"@storybook/client-api@workspace:*, @storybook/client-api@workspace:lib/client-api":
   version: 0.0.0-use.local
   resolution: "@storybook/client-api@workspace:lib/client-api"
   dependencies:
@@ -7286,7 +7286,7 @@ __metadata:
     "@babel/preset-react": ^7.12.10
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.3
     "@storybook/addons": "workspace:*"
-    "@storybook/client-api": 6.4.0-alpha.11
+    "@storybook/client-api": "workspace:*"
     "@storybook/core": "workspace:*"
     "@storybook/core-common": "workspace:*"
     "@storybook/node-logger": "workspace:*"
