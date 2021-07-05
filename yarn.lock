@@ -5727,10 +5727,10 @@ __metadata:
     webpack: 4
     zone.js: ^0.11.3
   peerDependencies:
-    "@storybook/angular": "*"
-    "@storybook/vue": "*"
-    "@storybook/vue3": "*"
-    "@storybook/web-components": "*"
+    "@storybook/angular": 6.4.0-alpha.11
+    "@storybook/vue": 6.4.0-alpha.11
+    "@storybook/vue3": 6.4.0-alpha.11
+    "@storybook/web-components": 6.4.0-alpha.11
     lit: ^2.0.0-rc.1
     lit-html: ^1.4.1 || ^2.0.0-rc.3
     react: ^16.8.0 || ^17.0.0
@@ -5791,8 +5791,8 @@ __metadata:
     ts-dedent: ^2.0.0
   peerDependencies:
     "@babel/core": ^7.9.6
-    "@storybook/vue": "*"
-    "@storybook/web-components": "*"
+    "@storybook/vue": 6.4.0-alpha.11
+    "@storybook/web-components": 6.4.0-alpha.11
     babel-loader: ^8.0.0
     lit-html: ^1.4.1 || ^2.0.0-rc.3
     react: ^16.8.0 || ^17.0.0
@@ -5914,7 +5914,7 @@ __metadata:
     jest-image-snapshot: ^4.3.0
     regenerator-runtime: ^0.13.7
   peerDependencies:
-    "@storybook/addon-storyshots": "*"
+    "@storybook/addon-storyshots": 6.4.0-alpha.11
     puppeteer: ^2.0.0 || ^3.0.0
   peerDependenciesMeta:
     puppeteer:
@@ -6170,6 +6170,7 @@ __metadata:
     regenerator-runtime: ^0.13.7
     sass-loader: ^10.1.0
     strip-json-comments: 3.1.1
+    telejson: ^5.3.2
     ts-dedent: ^2.0.0
     ts-jest: ^26.4.4
     ts-loader: ^8.0.14
@@ -6530,7 +6531,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/client-api@workspace:*, @storybook/client-api@workspace:lib/client-api":
+"@storybook/client-api@6.4.0-alpha.11, @storybook/client-api@workspace:*, @storybook/client-api@workspace:lib/client-api":
   version: 0.0.0-use.local
   resolution: "@storybook/client-api@workspace:lib/client-api"
   dependencies:
@@ -6727,7 +6728,7 @@ __metadata:
     "@babel/preset-typescript": ^7.12.7
     "@babel/register": ^7.12.1
     "@storybook/node-logger": "workspace:*"
-    "@storybook/react-docgen-typescript-plugin": 1.0.2-canary.3c70e01.0
+    "@storybook/react-docgen-typescript-plugin": 1.0.2-canary.253f8c1.0
     "@storybook/semver": ^7.3.2
     "@types/glob-base": ^0.3.0
     "@types/interpret": ^1.1.1
@@ -6826,8 +6827,8 @@ __metadata:
     util-deprecate: ^1.0.2
     webpack: 4
   peerDependencies:
-    "@storybook/builder-webpack5": "*"
-    "@storybook/manager-webpack5": "*"
+    "@storybook/builder-webpack5": 6.4.0-alpha.11
+    "@storybook/manager-webpack5": 6.4.0-alpha.11
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   peerDependenciesMeta:
@@ -7259,9 +7260,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-docgen-typescript-plugin@npm:1.0.2-canary.3c70e01.0":
-  version: 1.0.2-canary.3c70e01.0
-  resolution: "@storybook/react-docgen-typescript-plugin@npm:1.0.2-canary.3c70e01.0"
+"@storybook/react-docgen-typescript-plugin@npm:1.0.2-canary.253f8c1.0":
+  version: 1.0.2-canary.253f8c1.0
+  resolution: "@storybook/react-docgen-typescript-plugin@npm:1.0.2-canary.253f8c1.0"
   dependencies:
     debug: ^4.1.1
     endent: ^2.0.1
@@ -7273,7 +7274,7 @@ __metadata:
   peerDependencies:
     typescript: ">= 3.x"
     webpack: ">= 4"
-  checksum: dbbb302e21704e4be65dccbcf444e197581f33c3bed8a5902ec53fccd13bf5570b88c0187b8277e786bffaace8bf4050c6f8275dc1872e5fc28bba1c8b1e4d8d
+  checksum: 217a23cf7710e4359377aa4faab70edcaa15ca84d50cc2a70734e3f6e305e2d6330148c1addbf55971ea04801d9d85bbf6f3b00408dafa547e7d75799a485aa9
   languageName: node
   linkType: hard
 
@@ -7285,11 +7286,11 @@ __metadata:
     "@babel/preset-react": ^7.12.10
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.3
     "@storybook/addons": "workspace:*"
-    "@storybook/client-api": "workspace:*"
+    "@storybook/client-api": 6.4.0-alpha.11
     "@storybook/core": "workspace:*"
     "@storybook/core-common": "workspace:*"
     "@storybook/node-logger": "workspace:*"
-    "@storybook/react-docgen-typescript-plugin": 1.0.2-canary.3c70e01.0
+    "@storybook/react-docgen-typescript-plugin": 1.0.2-canary.253f8c1.0
     "@storybook/semver": ^7.3.2
     "@types/node": ^14.14.20
     "@types/prompts": ^2.0.9

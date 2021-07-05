@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-docs",
-  "version": "6.4.0-alpha.6",
+  "version": "6.4.0-alpha.11",
   "description": "Document component usage and properties in Markdown",
   "keywords": [
     "addon",
@@ -137,10 +137,10 @@
     "zone.js": "^0.11.3"
   },
   "peerDependencies": {
-    "@storybook/angular": "*",
-    "@storybook/vue": "*",
-    "@storybook/vue3": "*",
-    "@storybook/web-components": "*",
+    "@storybook/angular": "6.4.0-alpha.11",
+    "@storybook/vue": "6.4.0-alpha.11",
+    "@storybook/vue3": "6.4.0-alpha.11",
+    "@storybook/web-components": "6.4.0-alpha.11",
     "lit": "^2.0.0-rc.1",
     "lit-html": "^1.4.1 || ^2.0.0-rc.3",
     "react": "^16.8.0 || ^17.0.0",
@@ -191,7 +191,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e15d4e0276d925a601ee25fd819d5f050920e1ab",
+  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2",
   "sbmodern": "dist/modern/index.js",
   "storybook": {
     "displayName": "Docs",

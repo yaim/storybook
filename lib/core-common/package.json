@@ -1,6 +1,6 @@
 {
   "name": "@storybook/core-common",
-  "version": "6.4.0-alpha.6",
+  "version": "6.4.0-alpha.11",
   "description": "Storybook framework-agnostic API",
   "keywords": [
     "storybook"
@@ -90,7 +90,7 @@
     "webpack": "4"
   },
   "devDependencies": {
-    "@storybook/react-docgen-typescript-plugin": "1.0.2-canary.3c70e01.0",
+    "@storybook/react-docgen-typescript-plugin": "1.0.2-canary.253f8c1.0",
     "@types/interpret": "^1.1.1",
     "@types/mock-fs": "^4.13.0",
     "mock-fs": "^4.13.0"
@@ -107,6 +107,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e15d4e0276d925a601ee25fd819d5f050920e1ab",
+  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2",
   "sbmodern": "dist/modern/index.js"
 }

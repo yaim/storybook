@@ -1,6 +1,6 @@
 {
   "name": "web-components-kitchen-sink",
-  "version": "6.4.0-alpha.6",
+  "version": "6.4.0-alpha.11",
   "private": true,
   "description": "",
   "keywords": [],
@@ -9,7 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 9006"
+    "storybook": "start-storybook -p 9006",
+    "generate-custom-elements-manifest": "yarn custom-elements-manifest analyze --litelement --dev --exclude \"./**/*.stories.ts\""
   },
   "resolutions": {
     "@storybook/addon-a11y": "portal:../../addons/a11y",
@@ -62,12 +63,14 @@
     "@storybook/vue3": "portal:../../app/vue3",
     "@storybook/web-components": "portal:../../app/web-components",
     "sb": "portal:../../lib/cli-sb",
-    "storybook": "portal:../../lib/cli-storybook"
+    "storybook": "portal:../../lib/cli-storybook",
+    "typescript": "4.2.4"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.3.11",
     "@storybook/addon-a11y": "workspace:*",
     "@storybook/addon-actions": "workspace:*",
     "@storybook/addon-backgrounds": "workspace:*",
@@ -80,8 +83,10 @@
     "@storybook/addon-viewport": "workspace:*",
     "@storybook/web-components": "workspace:*",
     "global": "^4.4.0",
-    "jest": "^27.0.1"
+    "jest": "^27.0.1",
+    "typescript": "4.2.4"
   },
+  "customElements": "custom-elements.json",
   "storybook": {
     "chromatic": {
       "projectToken": "npm5gsofwkf"

@@ -2033,6 +2033,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@custom-elements-manifest/analyzer@npm:^0.3.11":
+  version: 0.3.13
+  resolution: "@custom-elements-manifest/analyzer@npm:0.3.13"
+  dependencies:
+    "@web/config-loader": ^0.1.3
+    chokidar: ^3.5.2
+    command-line-args: ^5.1.1
+    comment-parser: ^1.1.5
+    custom-elements-manifest: ^1.0.0
+    debounce: ^1.2.1
+    globby: ^11.0.1
+    typescript: ^4.3.2
+  bin:
+    cem: index.js
+    custom-elements-manifest: index.js
+  checksum: 636f9d76a6ac3f6cdbce153427ef3dd57014542c5cfa619560d2ae6e67c077b30ebea9297ae940db78fae2b6e791e44c3c6bf0ae51fd0c285f9674855b7d6cc9
+  languageName: node
+  linkType: hard
+
 "@discoveryjs/json-ext@npm:0.5.2":
   version: 0.5.2
   resolution: "@discoveryjs/json-ext@npm:0.5.2"
@@ -3228,6 +3247,7 @@ __metadata:
     "@storybook/core": "workspace:*"
     "@storybook/core-events": "workspace:*"
     "@storybook/csf": 0.0.1
+    "@storybook/csf-tools": "workspace:*"
     "@storybook/node-logger": "workspace:*"
     "@storybook/postinstall": "workspace:*"
     "@storybook/react": "workspace:*"
@@ -3284,10 +3304,10 @@ __metadata:
     webpack: 4
     zone.js: ^0.11.3
   peerDependencies:
-    "@storybook/angular": "*"
-    "@storybook/vue": "*"
-    "@storybook/vue3": "*"
-    "@storybook/web-components": "*"
+    "@storybook/angular": 6.4.0-alpha.11
+    "@storybook/vue": 6.4.0-alpha.11
+    "@storybook/vue3": 6.4.0-alpha.11
+    "@storybook/web-components": 6.4.0-alpha.11
     lit: ^2.0.0-rc.1
     lit-html: ^1.4.1 || ^2.0.0-rc.3
     react: ^16.8.0 || ^17.0.0
@@ -3575,7 +3595,7 @@ __metadata:
     global: ^4.4.0
     jest: ^26.6.3
     jest-preset-angular: ^8.3.2
-    postcss: ^7.0.35
+    postcss: ^7.0.36
     postcss-loader: ^4.2.0
     raw-loader: ^4.0.2
     react: 16.14.0
@@ -3584,6 +3604,7 @@ __metadata:
     regenerator-runtime: ^0.13.7
     sass-loader: ^10.1.0
     strip-json-comments: 3.1.1
+    telejson: ^5.3.2
     ts-dedent: ^2.0.0
     ts-jest: ^26.4.4
     ts-loader: ^8.0.14
@@ -3721,7 +3742,7 @@ __metadata:
     global: ^4.4.0
     html-webpack-plugin: ^4.0.0
     pnp-webpack-plugin: 1.6.4
-    postcss: ^7.0.35
+    postcss: ^7.0.36
     postcss-flexbugs-fixes: ^4.2.1
     postcss-loader: ^4.2.0
     raw-loader: ^4.0.2
@@ -3797,7 +3818,7 @@ __metadata:
     case-sensitive-paths-webpack-plugin: ^2.3.0
     core-js: ^3.8.2
     css-loader: ^5.0.1
-    dotenv-webpack: ^6.0.0
+    dotenv-webpack: ^7.0.0
     fork-ts-checker-webpack-plugin: ^6.0.4
     fs-extra: ^9.0.1
     glob: ^7.1.6
@@ -3976,6 +3997,7 @@ __metadata:
     "@babel/preset-typescript": ^7.12.7
     "@babel/register": ^7.12.1
     "@storybook/node-logger": "workspace:*"
+    "@storybook/react-docgen-typescript-plugin": 1.0.2-canary.253f8c1.0
     "@storybook/semver": ^7.3.2
     "@types/glob-base": ^0.3.0
     "@types/interpret": ^1.1.1
@@ -4001,7 +4023,6 @@ __metadata:
     mock-fs: ^4.13.0
     pkg-dir: ^5.0.0
     pretty-hrtime: ^1.0.3
-    react-docgen-typescript-plugin: ^1.0.0
     resolve-from: ^5.0.0
     ts-dedent: ^2.0.0
     util-deprecate: ^1.0.2
@@ -4066,8 +4087,8 @@ __metadata:
     util-deprecate: ^1.0.2
     webpack: 4
   peerDependencies:
-    "@storybook/builder-webpack5": "*"
-    "@storybook/manager-webpack5": "*"
+    "@storybook/builder-webpack5": 6.4.0-alpha.11
+    "@storybook/manager-webpack5": 6.4.0-alpha.11
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   peerDependenciesMeta:
@@ -4104,14 +4125,22 @@ __metadata:
   dependencies:
     "@babel/generator": ^7.12.11
     "@babel/parser": ^7.12.11
+    "@babel/plugin-transform-react-jsx": ^7.12.12
+    "@babel/preset-env": ^7.12.11
     "@babel/traverse": ^7.12.11
     "@babel/types": ^7.12.11
+    "@mdx-js/mdx": ^1.6.22
     "@storybook/csf": ^0.0.1
     "@types/fs-extra": ^9.0.6
     core-js: ^3.8.2
     fs-extra: ^9.0.1
+    global: ^4.4.0
+    js-string-escape: ^1.0.1
     js-yaml: ^3.14.1
+    lodash: ^4.17.20
+    prettier: ~2.2.1
     regenerator-runtime: ^0.13.7
+    ts-dedent: ^2.0.0
   languageName: node
   linkType: soft
 
@@ -4203,6 +4232,24 @@ __metadata:
   languageName: node
   linkType: soft
 
+"@storybook/react-docgen-typescript-plugin@npm:1.0.2-canary.253f8c1.0":
+  version: 1.0.2-canary.253f8c1.0
+  resolution: "@storybook/react-docgen-typescript-plugin@npm:1.0.2-canary.253f8c1.0"
+  dependencies:
+    debug: ^4.1.1
+    endent: ^2.0.1
+    find-cache-dir: ^3.3.1
+    flat-cache: ^3.0.4
+    micromatch: ^4.0.2
+    react-docgen-typescript: ^2.0.0
+    tslib: ^2.0.0
+  peerDependencies:
+    typescript: ">= 3.x"
+    webpack: ">= 4"
+  checksum: 217a23cf7710e4359377aa4faab70edcaa15ca84d50cc2a70734e3f6e305e2d6330148c1addbf55971ea04801d9d85bbf6f3b00408dafa547e7d75799a485aa9
+  languageName: node
+  linkType: hard
+
 "@storybook/react@portal:../../app/react::locator=web-components-kitchen-sink%40workspace%3A.":
   version: 0.0.0-use.local
   resolution: "@storybook/react@portal:../../app/react::locator=web-components-kitchen-sink%40workspace%3A."
@@ -4211,10 +4258,11 @@ __metadata:
     "@babel/preset-react": ^7.12.10
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.3
     "@storybook/addons": "workspace:*"
-    "@storybook/client-api": "workspace:*"
+    "@storybook/client-api": 6.4.0-alpha.11
     "@storybook/core": "workspace:*"
     "@storybook/core-common": "workspace:*"
     "@storybook/node-logger": "workspace:*"
+    "@storybook/react-docgen-typescript-plugin": 1.0.2-canary.253f8c1.0
     "@storybook/semver": ^7.3.2
     "@types/node": ^14.14.20
     "@types/prompts": ^2.0.9
@@ -4227,7 +4275,6 @@ __metadata:
     lodash: ^4.17.20
     prop-types: ^15.7.2
     react-dev-utils: ^11.0.3
-    react-docgen-typescript-plugin: ^1.0.0
     react-refresh: ^0.8.3
     read-pkg-up: ^7.0.1
     regenerator-runtime: ^0.13.7
@@ -4398,7 +4445,6 @@ __metadata:
     "@vue/compiler-sfc": ^3.0.0
     babel-loader: ^7.0.0 || ^8.0.0
     vue: ^3.0.0
-    vue-loader: ^16.0.0
   bin:
     build-storybook: ./bin/build.js
     start-storybook: ./bin/index.js
@@ -5559,6 +5605,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@web/config-loader@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "@web/config-loader@npm:0.1.3"
+  dependencies:
+    semver: ^7.3.4
+  checksum: 9127d89df362481554ee9a76266ac68995b3da01974fd2de1182bac1efbb383b150a6ecff54b900ece89d3897ddfbe60fa45ba3d9530f1a047d4881f437c3134
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.11.0":
   version: 1.11.0
   resolution: "@webassemblyjs/ast@npm:1.11.0"
@@ -6234,7 +6289,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anymatch@npm:^3.0.0, anymatch@npm:^3.0.3, anymatch@npm:~3.1.1":
+"anymatch@npm:^3.0.0, anymatch@npm:^3.0.3, anymatch@npm:~3.1.1, anymatch@npm:~3.1.2":
   version: 3.1.2
   resolution: "anymatch@npm:3.1.2"
   dependencies:
@@ -6305,6 +6360,13 @@ __metadata:
   version: 3.1.0
   resolution: "arr-union@npm:3.1.0"
   checksum: 8f87a55c52ae3e56724f7f38ed3deb0da40cd1c6f47839b95d7188d8927c5ec2d902e474a68bb3b971cfd4e3234ad03c6942ea39b78d22f5029aa459e1d502a3
+  languageName: node
+  linkType: hard
+
+"array-back@npm:^3.0.1":
+  version: 3.1.0
+  resolution: "array-back@npm:3.1.0"
+  checksum: 990764002b353c4249e57decbc78c54faf9bd689f7c598cea9091c184c47c1f1f771c56a56d19a03d9c3d0c086faca9ea35a3513116fa821322105845462a9d4
   languageName: node
   linkType: hard
 
@@ -7832,6 +7894,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chokidar@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "chokidar@npm:3.5.2"
+  dependencies:
+    anymatch: ~3.1.2
+    braces: ~3.0.2
+    fsevents: ~2.3.2
+    glob-parent: ~5.1.2
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.6.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: eca285ca05a33f56e8733bc93b93aab91277d5eb282e3c52c8983d6da316f4ecbfdbbd3c14425d9c1afce8c5b6ce05c771b4bacd3866e8119c27123420c89a47
+  languageName: node
+  linkType: hard
+
 "chownr@npm:^1.1.1":
   version: 1.1.4
   resolution: "chownr@npm:1.1.4"
@@ -8230,6 +8311,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"command-line-args@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "command-line-args@npm:5.1.1"
+  dependencies:
+    array-back: ^3.0.1
+    find-replace: ^3.0.0
+    lodash.camelcase: ^4.3.0
+    typical: ^4.0.0
+  checksum: ad58cacd38cf044257104cd2db2ddcc561b8e6074fb07ccdc9303637f148e1192f0a7bfadfb6d1c8a334f4208dd77e4e473627bac9948fd076aa65cc459cb642
+  languageName: node
+  linkType: hard
+
 "commander@npm:^2.19.0, commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
@@ -8255,6 +8348,13 @@ __metadata:
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
   checksum: ac4536eb92e5c6e5c18e8703c337d602e27427151d0d78fe52bf2f2728de4d8d3eb4a1654d12d9fbbc819f89cd97f24ba86d0693f078d8f4d0709cbf7f98c8dc
+  languageName: node
+  linkType: hard
+
+"comment-parser@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "comment-parser@npm:1.1.5"
+  checksum: 1b0a4a5c1a025f3eb6b471d4e791f5fc5862a3d9c18769b2f7513545b24d0a67696726fd2226dff3970d45054229f18003275e0042feb5509d0c345ceaa5e145
   languageName: node
   linkType: hard
 
@@ -9020,6 +9120,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"custom-elements-manifest@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "custom-elements-manifest@npm:1.0.0"
+  checksum: a1c09d32092251a55553644f07226f19c3b701950825582e332000ee5220c3177384c3218f7e1bd10c3d3ce196dc5512ce318c257e3ebb8ab8b9f90086726097
+  languageName: node
+  linkType: hard
+
 "cyclist@npm:^1.0.1":
   version: 1.0.1
   resolution: "cyclist@npm:1.0.1"
@@ -9065,6 +9172,13 @@ __metadata:
   version: 1.0.2
   resolution: "de-indent@npm:1.0.2"
   checksum: b55df6f804faa883e787cf3d0a4b856c24ff9d51f9da966435c347ee4dba9d846a6513b7ba76f4e3d0b973fa3edc153baca57bbd8ca5b4980d77469a9c51e1d6
+  languageName: node
+  linkType: hard
+
+"debounce@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "debounce@npm:1.2.1"
+  checksum: 21fc4e0d9c088365310c9e580e27bf80e8471d66ff1650d048f793f2c799acaf5f0846fe21a491c6c165abfbc70e6015fbd3eefbc26e3085a2af7910d694512d
   languageName: node
   linkType: hard
 
@@ -9595,7 +9709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-defaults@npm:^2.0.1":
+"dotenv-defaults@npm:^2.0.2":
   version: 2.0.2
   resolution: "dotenv-defaults@npm:2.0.2"
   dependencies:
@@ -9622,14 +9736,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-webpack@npm:^6.0.0":
-  version: 6.0.4
-  resolution: "dotenv-webpack@npm:6.0.4"
+"dotenv-webpack@npm:^7.0.0":
+  version: 7.0.3
+  resolution: "dotenv-webpack@npm:7.0.3"
   dependencies:
-    dotenv-defaults: ^2.0.1
+    dotenv-defaults: ^2.0.2
   peerDependencies:
-    webpack: ^1 || ^2 || ^3 || ^4 || ^5
-  checksum: 261e2abe78dd5ddfbe6a70bcb76bdcd5fa208c12d31ec385098ba8972ec7034a3a6d024c303809b84eb92ab2484789bb493b013c82276657bf287780128f1223
+    webpack: ^4 || ^5
+  checksum: 639dec3c1bdc01055a69a4a6b0cc5ceeeb56a310bf9d93a834bf0917ec9d0b85ddc944886bba9326cb5c76b107b05e33ede2d2fa706a3398398dae8ec529fa2d
   languageName: node
   linkType: hard
 
@@ -10716,6 +10830,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"find-replace@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "find-replace@npm:3.0.0"
+  dependencies:
+    array-back: ^3.0.1
+  checksum: 75f9d1d45c248cda743c871e4a0415fe68c73b074271181cd8d2e7cab30f29b862db869c0e64970bdd975c226f11423f600adef2bed2b1503d69a8d1e05a24fb
+  languageName: node
+  linkType: hard
+
 "find-root@npm:^1.1.0":
   version: 1.1.0
   resolution: "find-root@npm:1.1.0"
@@ -11033,7 +11156,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@^2.1.2, fsevents@^2.3.2, fsevents@~2.3.1":
+"fsevents@^2.1.2, fsevents@^2.3.2, fsevents@~2.3.1, fsevents@~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -11052,7 +11175,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"
   dependencies:
@@ -11230,7 +11353,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"glob-parent@npm:^5.1.0, glob-parent@npm:^5.1.1, glob-parent@npm:~5.1.0":
+"glob-parent@npm:^5.1.0, glob-parent@npm:^5.1.1, glob-parent@npm:~5.1.0, glob-parent@npm:~5.1.2":
   version: 5.1.2
   resolution: "glob-parent@npm:5.1.2"
   dependencies:
@@ -17339,6 +17462,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"postcss@npm:^7.0.36":
+  version: 7.0.36
+  resolution: "postcss@npm:7.0.36"
+  dependencies:
+    chalk: ^2.4.2
+    source-map: ^0.6.1
+    supports-color: ^6.1.0
+  checksum: 1a81f8a5a116cfa1ca2f478aeb8a2701fdcb0a3625635d2404387025d460dce489f6dace7867d561ae400705c2cce8294da8f85f8b6fe7a54fcd59da8accd748
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.1.10, postcss@npm:^8.1.4, postcss@npm:^8.2.15":
   version: 8.3.0
   resolution: "postcss@npm:8.3.0"
@@ -17998,31 +18132,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-docgen-typescript-plugin@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "react-docgen-typescript-plugin@npm:1.0.0"
-  dependencies:
-    debug: ^4.1.1
-    endent: ^2.0.1
-    find-cache-dir: ^3.3.1
-    flat-cache: ^3.0.4
-    micromatch: ^4.0.2
-    react-docgen-typescript: ^1.22.0
-    tslib: ^2.0.0
-    webpack-sources: ^2.2.0
+"react-docgen-typescript@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "react-docgen-typescript@npm:2.0.0"
   peerDependencies:
-    typescript: ">= 3.x"
-    webpack: ">= 4"
-  checksum: a70a5da81b9a0ec6fba333988c472e045a4e24270d8ccb742cf1a47d87b2c4d573f76a337b77f5620523126789dccba1fc72aab91f001267048d92823f6469eb
-  languageName: node
-  linkType: hard
-
-"react-docgen-typescript@npm:^1.22.0":
-  version: 1.22.0
-  resolution: "react-docgen-typescript@npm:1.22.0"
-  peerDependencies:
-    typescript: ">= 3.x"
-  checksum: c1fcd8ca69897ac5ed1f0f3233a0522b09a385565e364e2e6364c29edcdf906b71a124a05651fe19db19eb833517e6d5f2adea561b4ab79c4397b06833f594c2
+    typescript: ">= 4.3.x"
+  checksum: 18abe9dad57a9d0319c53353060d533ca314b9dd23b138effcb8e725a2c6b1ae63650037100062beefcc30e247d292245854540ddaf160af9bf2ae9a5dd12375
   languageName: node
   linkType: hard
 
@@ -18347,6 +18462,15 @@ fsevents@^1.2.7:
   dependencies:
     picomatch: ^2.2.1
   checksum: 14bf3c7709b984d6d21fab19546beb0a72f4b545faab226aa867d76db6116c260b69c3081c8725ae890a7fe8b226e193b8afb92ec2f856e35fa7b4d798f4efcc
+  languageName: node
+  linkType: hard
+
+"readdirp@npm:~3.6.0":
+  version: 3.6.0
+  resolution: "readdirp@npm:3.6.0"
+  dependencies:
+    picomatch: ^2.2.1
+  checksum: 0433695847b47d0a6fa3245d7e6cb50738d6bd07f02a2da43cb4d6972c5c90a0545f1dbe889737463bcffd7746ab75a8068f2f6d946602e39e02e32754768971
   languageName: node
   linkType: hard
 
@@ -21019,43 +21143,30 @@ resolve@1.17.0:
   languageName: node
   linkType: hard
 
-typescript@4.1.5:
-  version: 4.1.5
-  resolution: "typescript@npm:4.1.5"
+"typescript@npm:4.2.4":
+  version: 4.2.4
+  resolution: "typescript@npm:4.2.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c23249871d89c8cf720bdd4f22c8b8d0a810236854a8f99888f50c4863302e1a7e6f184c2b5d4d5d56d9e69e95fc382f9d07b36dca0690e01df7b1d963cb25f1
+  checksum: 6db867f39aa58a5f5ac0fd580ae7cb9f5ba3b925359702e3e1464b7877f8b4f5f2b395ede6c98253015e6ddcb604b045a4a6bd34701ee5af27a5234d5d3cb602
   languageName: node
   linkType: hard
 
-typescript@^3.8.3:
-  version: 3.9.9
-  resolution: "typescript@npm:3.9.9"
+"typescript@patch:typescript@npm%3A4.2.4#builtin<compat/typescript>":
+  version: 4.2.4
+  resolution: "typescript@patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=ddfc1b"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5d448ff145190abb55242b06c66562876cea9182728ba814bd3caa739336d00c5f3c3c69fc47274e32beb2ca9ee9e08523063a0b0548b1530bd9898bdb202daa
+  checksum: 3c4f4b7ab18eb46d52a67b76d5365674c0334c0f49842c99c12d5286a1476f18e05dac108d0f32843354e378b8664b1bf4017fb6b27e8a541dbf55f46f8cba1b
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.1.5#builtin<compat/typescript>":
-  version: 4.1.5
-  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=ddfc1b"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 49d7ba7df28b5a3f4be053ae9308fcdd46ab97bdd8211f722209f7a90a0167cebcf294a448b9983f260abd49610a706708c950b7bef4d0add779ef3c4c745d59
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^3.8.3#builtin<compat/typescript>":
-  version: 3.9.9
-  resolution: "typescript@patch:typescript@npm%3A3.9.9#builtin<compat/typescript>::version=3.9.9&hash=ddfc1b"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 4cd3c712a397b0615c1b7a7e46e1be255a432705a458709d234d168c2089586c1ac5f76381b2eca63cd7aabe9e671d6fb12f0fa794091c17c9d1f3e91c3834d9
+"typical@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "typical@npm:4.0.0"
+  checksum: eae8981c5c9b29aef3bb577470afe938825c1a389256f3978879a55e6a58953cf4df99969497c1ec1cb227f59dfbbcfc6049044b09fd06402e1a8216fabc3c2d
   languageName: node
   linkType: hard
 
@@ -21838,6 +21949,7 @@ typescript@^3.8.3:
   version: 0.0.0-use.local
   resolution: "web-components-kitchen-sink@workspace:."
   dependencies:
+    "@custom-elements-manifest/analyzer": ^0.3.11
     "@storybook/addon-a11y": "workspace:*"
     "@storybook/addon-actions": "workspace:*"
     "@storybook/addon-backgrounds": "workspace:*"
@@ -21852,6 +21964,7 @@ typescript@^3.8.3:
     global: ^4.4.0
     jest: ^27.0.1
     lit: ^2.0.0-rc.2
+    typescript: 4.2.4
   languageName: unknown
   linkType: soft
 
@@ -22031,7 +22144,7 @@ typescript@^3.8.3:
   languageName: node
   linkType: hard
 
-"webpack-sources@npm:^2.2.0, webpack-sources@npm:^2.3.0":
+"webpack-sources@npm:^2.3.0":
   version: 2.3.0
   resolution: "webpack-sources@npm:2.3.0"
   dependencies:
