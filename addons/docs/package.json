@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-docs",
-  "version": "6.4.0-alpha.11",
+  "version": "6.4.0-alpha.13",
   "description": "Document component usage and properties in Markdown",
   "keywords": [
     "addon",
@@ -10,7 +10,7 @@
     "essentials",
     "organize"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/master/addons/docs",
+  "homepage": "https://github.com/storybookjs/storybook/tree/main/addons/docs",
   "bugs": {
     "url": "https://github.com/storybookjs/storybook/issues"
   },
@@ -89,6 +89,7 @@
     "js-string-escape": "^1.0.1",
     "loader-utils": "^2.0.0",
     "lodash": "^4.17.20",
+    "nanoid": "^3.1.23",
     "p-limit": "^3.1.0",
     "prettier": "~2.2.1",
     "prop-types": "^15.7.2",
@@ -137,10 +138,10 @@
     "zone.js": "^0.11.3"
   },
   "peerDependencies": {
-    "@storybook/angular": "6.4.0-alpha.11",
-    "@storybook/vue": "6.4.0-alpha.11",
-    "@storybook/vue3": "6.4.0-alpha.11",
-    "@storybook/web-components": "6.4.0-alpha.11",
+    "@storybook/angular": "6.4.0-alpha.13",
+    "@storybook/vue": "6.4.0-alpha.13",
+    "@storybook/vue3": "6.4.0-alpha.13",
+    "@storybook/web-components": "6.4.0-alpha.13",
     "lit": "^2.0.0-rc.1",
     "lit-html": "^1.4.1 || ^2.0.0-rc.3",
     "react": "^16.8.0 || ^17.0.0",
@@ -191,7 +192,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2",
+  "gitHead": "70d04492b677c52c518b1b9591e382ba57484042",
   "sbmodern": "dist/modern/index.js",
   "storybook": {
     "displayName": "Docs",

@@ -1,11 +1,11 @@
 {
   "name": "@storybook/server",
-  "version": "6.4.0-alpha.11",
+  "version": "6.4.0-alpha.13",
   "description": "Storybook for Server: View HTML snippets from a server in isolation with Hot Reloading.",
   "keywords": [
     "storybook"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/master/app/server",
+  "homepage": "https://github.com/storybookjs/storybook/tree/main/app/server",
   "bugs": {
     "url": "https://github.com/storybookjs/storybook/issues"
   },
@@ -72,6 +72,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2",
+  "gitHead": "70d04492b677c52c518b1b9591e382ba57484042",
   "sbmodern": "dist/modern/client/index.js"
 }

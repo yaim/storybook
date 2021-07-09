@@ -1,6 +1,6 @@
 {
   "name": "ember-example",
-  "version": "6.4.0-alpha.11",
+  "version": "6.4.0-alpha.13",
   "private": true,
   "scripts": {
     "build": "ember build --output-path ember-output",

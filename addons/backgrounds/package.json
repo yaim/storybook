@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-backgrounds",
-  "version": "6.4.0-alpha.11",
+  "version": "6.4.0-alpha.13",
   "description": "Switch backgrounds to view components in different settings",
   "keywords": [
     "addon",
@@ -10,7 +10,7 @@
     "essentials",
     "design"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/master/addons/backgrounds",
+  "homepage": "https://github.com/storybookjs/storybook/tree/main/addons/backgrounds",
   "bugs": {
     "url": "https://github.com/storybookjs/storybook/issues"
   },
@@ -76,7 +76,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2",
+  "gitHead": "70d04492b677c52c518b1b9591e382ba57484042",
   "sbmodern": "dist/modern/index.js",
   "storybook": {
     "displayName": "Backgrounds",

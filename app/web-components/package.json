@@ -1,13 +1,13 @@
 {
   "name": "@storybook/web-components",
-  "version": "6.4.0-alpha.11",
+  "version": "6.4.0-alpha.13",
   "description": "Storybook for web-components: View web components snippets in isolation with Hot Reloading.",
   "keywords": [
     "lit-html",
     "storybook",
     "web-components"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/master/app/web-components",
+  "homepage": "https://github.com/storybookjs/storybook/tree/main/app/web-components",
   "bugs": {
     "url": "https://github.com/storybookjs/storybook/issues"
   },
@@ -76,6 +76,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2",
+  "gitHead": "70d04492b677c52c518b1b9591e382ba57484042",
   "sbmodern": "dist/modern/client/index.js"
 }

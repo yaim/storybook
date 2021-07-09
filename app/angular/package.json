@@ -1,11 +1,11 @@
 {
   "name": "@storybook/angular",
-  "version": "6.4.0-alpha.11",
+  "version": "6.4.0-alpha.13",
   "description": "Storybook for Angular: Develop Angular Components in isolation with Hot Reloading.",
   "keywords": [
     "storybook"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/master/app/angular",
+  "homepage": "https://github.com/storybookjs/storybook/tree/main/app/angular",
   "bugs": {
     "url": "https://github.com/storybookjs/storybook/issues"
   },
@@ -129,5 +129,5 @@
     "access": "public"
   },
   "builders": "dist/ts3.9/builders/builders.json",
-  "gitHead": "52cc8f0ba8fc0601c38620f7173a47b0fd7d38e2"
+  "gitHead": "70d04492b677c52c518b1b9591e382ba57484042"
 }
