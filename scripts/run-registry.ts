@@ -71,27 +71,6 @@ const registryUrl = (command: string, url?: string) =>
 const registriesUrl = (yarnUrl?: string, npmUrl?: string) =>
   Promise.all([registryUrl('/usr/local/bin/yarn', yarnUrl), registryUrl('npm', npmUrl || yarnUrl)]);
 
-const cleanYarnConfig = () => {
-  return new Promise<string>((res, rej) => {
-    const commands = [
-      // FIXME: Use `yarn config unset` as soon as we will be using Yarn 3 in the monorepo
-      // `yarn config unset npmRegistryServer`,
-      // `yarn config unset npmAuthIdent`
-      `git restore .yarnrc.yml`,
-    ];
-
-    exec(commands.join(' && '), (e) => {
-      if (e) {
-        rej(e);
-      } else {
-        logger.log(`🛬 Yarn config has been cleanup`);
-
-        res(undefined);
-      }
-    });
-  });
-};
-
 const applyRegistriesUrl = (
   yarnUrl: string,
   npmUrl: string,
@@ -100,8 +79,7 @@ const applyRegistriesUrl = (
 ) => {
   logger.log(`↪️  changing system config`);
   nodeCleanup((_exitCode, signal) => {
-    cleanYarnConfig()
-      .then(() => registriesUrl(originalYarnUrl, originalNpmUrl))
+    registriesUrl(originalYarnUrl, originalNpmUrl)
       .then(() => {
         logger.log(dedent`
             Your registry config has been restored from:
@@ -122,13 +100,9 @@ const publish = (verdaccioUrl: string) => {
   logger.log(`🛫 Publishing packages with a concurrency of ${maxConcurrentTasks}`);
 
   return new Promise((res) => {
-    const commands = [
-      `yarn config set npmRegistryServer ${verdaccioUrl}`,
-      `yarn config set npmAuthIdent user:password`,
-      `yarn workspaces foreach --parallel --jobs ${maxConcurrentTasks} --no-private npm publish --access restricted`,
-    ];
+    const publishCommand = `YARN_NPM_AUTH_IDENT="user:password" YARN_NPM_REGISTRY_SERVER="${verdaccioUrl}" yarn workspaces foreach --parallel --jobs ${maxConcurrentTasks} --no-private npm publish --access restricted`;
 
-    exec(commands.join(' && '), (e) => {
+    exec(publishCommand, (e) => {
       if (e) {
         res(e);
       } else {
